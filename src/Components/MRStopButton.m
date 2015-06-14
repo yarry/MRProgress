@@ -108,4 +108,16 @@ static CGFloat const MRStopButtonMinSize = 44.0;
     } completion:nil];
 }
 
+#pragma mark - Properties
+
+- (CGFloat)cornerRadius {
+    return self.layer.cornerRadius;
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = cornerRadius > 0;
+}
+
+
 @end

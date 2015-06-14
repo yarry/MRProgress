@@ -44,4 +44,11 @@
  */
 - (CGRect)frameThatFits:(CGRect)parentSize;
 
+/**
+The corner radius of stop button
+
+Default is 0.0. Must be larger than zero.
+*/
+@property (nonatomic) CGFloat cornerRadius UI_APPEARANCE_SELECTOR;
+
 @end
